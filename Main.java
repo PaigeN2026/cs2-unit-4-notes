@@ -57,6 +57,26 @@ public class Main {
          }
       }
      
+      // *** LOOPS & STRINGS ***
+      // WHILE loop -> find & replace characters
+      String s = "Jackson dropped all of the chargers!";
+      int i = 0;
+      // test condition: while 'a' is still in String s
+      while (s.indexOf("a") >= 0) {
+         // get the first index of a 
+         i = s.indexOf("a"); 
+         // replace character at the index
+         String letter = s.substring(i, i+1);
+         System.out.println("There is an " + letter + " at index " + i);
+         // get the first part of the string
+         String firstPart = s.substring(0, i);
+         // get the last part of the string
+         String lastPart = s.substring(i+1, s.length());
+         // replace character in s before proceeding 
+         s = firstPart + "a" + lastPart;
+      } 
+      System.out.println("String after find and replace: " + s);
+
       // GUESSING GAME
       Scanner scan = new Scanner(System.in);
       // Choose a random number from 0-100
