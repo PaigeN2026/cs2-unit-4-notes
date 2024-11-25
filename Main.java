@@ -73,7 +73,7 @@ public class Main {
          // get the last part of the string
          String lastPart = s.substring(i+1, s.length());
          // replace character in s before proceeding 
-         s = firstPart + "a" + lastPart;
+         s = firstPart + "@" + lastPart;
       } 
       System.out.println("String after find and replace: " + s);
 
